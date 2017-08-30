@@ -1,0 +1,23 @@
+extends heading
+
+block content
+	div(class="search-div")
+		table(border-collapse: collapse, width: 100%, bgcolor: gray)
+			tr
+				td(class="two-column")
+					label(for="employeeid") Employee ID: 
+				td(class="two-column")
+					input(id="employeeid", type="text")
+			tr
+				td(class="two-column")
+					label(for="lastname") Last Name: 
+				td(class="two-column")
+					input(id="lastname", type="text")
+			tr
+				td(class="two-column")
+					label(for="firstname") First Name: 
+				td(class="two-column")
+					input(id="firstname", type="text")
+		p
+		form(action="/employeeview")
+			input(type="submit", value="Search")

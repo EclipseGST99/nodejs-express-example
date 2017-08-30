@@ -1,0 +1,33 @@
+html
+	head
+		h1 Employee Directory
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		header
+			nav
+				ul
+		table(width="100%", cellspacing="0", cellpadding="0", border="0", role="presentation", bgcolor="white")
+			div(class="login-spacer")
+			tr
+				td(class="three-column")
+					div
+				td(class="three-column")
+					div(class="rounded-corners")
+						fieldset
+							form(class="LoginForm", autocomplete="off", method="Post", name="Login")
+								div
+									p
+								div
+									label(for="username") Username
+								div
+									input(id="username", type="text")
+								div
+									label(for="password") Password
+								div
+									input(id="password", type="password")
+								div
+									p
+								div
+									a(class="button", href="/home") Login
+				td(class="three-column")
+					div
